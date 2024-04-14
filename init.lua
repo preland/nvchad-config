@@ -1,4 +1,13 @@
+if vim.g.neovide then
+  vim.o.guifont = "FiraCode Nerd Font:h20"
+  vim.g.neovide_input_macos_alt_is_meta = true
+  vim.g.neovide_cursor_animation_length = 0.05
+  vim.g.neovide_cursor_trail_size = 0.8
+  vim.g.neovide_cursor_vfx_mode = "pixiedust"
+  vim.g.neovide_cursor_vfx_particle_density = 21.0
+end
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
+
 vim.g.mapleader = " "
 
 -- bootstrap lazy and all plugins
